@@ -19,13 +19,37 @@ html{
 
     width:70vw;
     margin:40px auto;
-    
 }
 
 
-img{
+.img{
     max-width:100%;
 }
+
+.img-right{
+    float:right;
+    margin-left:20px; 
+    border:2px solid #9E2828;
+    padding:5px; 
+}
+
+.img-left{
+    float:left;
+    margin-right:20px; 
+    border:2px solid #9E2828;
+    padding:5px; 
+}
+
+.img-center{
+    display:block;
+    margin:20px auto;
+    border:2px solid #9E2828;
+    padding:5px; 
+}
+
+
+
+
 
 
 /*----------Global Styles-----*/
@@ -127,14 +151,14 @@ header.primary nav li{
 
  
 #intro {
-    border:1px dotted #c0c0c0;
+    border:1px dotted #9E2828;
     padding-bottom:1.1rem;
 
 }
 
 #intro h2{
     color:#FF7373;
-    border:1px dotted #c0c0c0;
+    border:1px dotted #9E2828;
 
 
 }
@@ -143,6 +167,8 @@ header.primary nav li{
     display :flex;
     flex-direction:row;
     justify-content:space-between;
+    border-bottom:1px dotted #9E2828;
+    padding-bottom:2.8rem;
 }
 
 #content article.post{
@@ -169,7 +195,7 @@ time.post-date{
     
 }
 .post image{
-    border:1px solid #c0c0c0;
+    border:1px solid #9E2828;
      padding:2px;
      margin: 5px 0;
 }
@@ -221,6 +247,113 @@ article.widget footer{
     font-size:.8rem;
     text-transform:uppercase;
 }
+
+#additional-elements h2{
+    color:#FF7373;
+    border-bottom:1px dotted #c0c0c0;
+}
+
+#additional-elements a{
+    color:#ff7373;
+}
+
+#additional-elements a:hover{
+    text-decoration:none;
+}
+
+
+
+#additional-elements h3{
+   border-left:8px solid #FF7373; 
+   padding-left:10px;
+}
+
+table{
+    width:100%;
+    border:1px solid #9E2828;
+    border-collapse:collapse;
+}
+
+tr{
+}
+
+tr:nth-child(even){
+    background-color:rgba(0,0,0,.1)
+}
+
+tr:hover{
+    background-color:rgba(0,0,0,.2)
+}
+
+td:nth-child(2n), td:nth-child(3n){
+    text-align:right;
+}
+
+
+th{
+    background:#F5D6AF;
+    color:#FF7373;
+    width:33%; 
+    padding:10px; 
+}
+
+td{
+    border:1px solid #9E2828;
+    padding:5px;
+}
+
+table caption{
+    color:#FF7373;
+    padding:10px;
+    font-weight:bold;
+    font-size:1.4rem;
+}
+
+#additional-elements ol{
+    list-style-type:square;
+    list-style-position:outside;
+}
+
+#additional-elements ul{
+    list-style-type:square;
+}
+
+#additional-elements ul{
+    list-style-type:disc;
+
+}
+
+dl{}
+dt{
+    font-weight:bold;
+    margin-top:1rem;
+}
+dd{
+    margin-left:0;
+}
+
+/*  ADjacent Sibling Combinator */
+
+dd + dt{
+    
+}
+
+#addtional-elements blcokquote{
+    background-color:rgba(0,0,0.15);
+    padding:30px 40px;
+    border:5px double #c0c0c0;
+    border-radius:15px;
+    font-size:1.2rem;
+}
+
+#additional-elements cite{
+    display:block;
+    font-size:.6rem;
+    text-align:right;
+    font-weight:bold;
+    margin-top:1.2rem;
+}
+
 
 @media screen and (max-width:600px){
 
